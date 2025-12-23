@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sameer Baig| Portfolio</title>
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000000;
+            color: #ff69b4; /* Pink Text */
+            font-family: 'Georgia', serif;
+            font-style: italic; /* Italic Font */
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        /* Navigation Menu */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #111;
+            border-bottom: 1px solid #ff69b4;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #ff69b4;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            text-shadow: 0 0 10px #ff69b4;
+        }
+
+        /* Section Containers */
+        .container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 1px dashed #333;
+        }
+
+        .card {
+            border: 2px solid #ff69b4;
+            padding: 40px;
+            border-radius: 20px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 0 20px rgba(255, 105, 180, 0.2);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ff69b4;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 25px;
+            border: 1px solid #ff69b4;
+            color: #ff69b4;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #ff69b4;
+            color: #000;
+        }
+
+        /* List Styles for Menu/Skills */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 10px 0;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#profile">Profile</a>
+    </nav>
+
+    <!-- Home Page -->
+    <section id="home" class="container">
+        <div class="card">
+            <h1>Sameer Baig</h1>
+            <p>Frontend & Fullstack Developer</p>
+            <p>Welcome to my digital portfolio.</p>
+            <a href="#about" class="btn">Explore More</a>
+        </div>
+    </section>
+
+    <!-- About Page -->
+    <section id="about" class="container">
+        <div class="card">
+            <h2>About Me</h2>
+            <p>I am a passionate 3rd-year student pursuing a degree in <strong>Artificial Intelligence and Machine Learning</strong> at <strong>Sri Vasavi Institute of Engineering and Technology</strong>.</p>
+            <p>I bridge the gap between intelligent algorithms and user-friendly web interfaces.</p>
+        </div>
+    </section>
+
+    <!-- Menu (Skills/Offerings) Page -->
+    <section id="menu" class="container">
+        <div class="card">
+            <h2>Tech Menu</h2>
+            <ul>
+                <li>✦ Frontend Development (HTML, CSS, JS)</li>
+                <li>✦ Fullstack Solutions</li>
+                <li>✦ AI & Machine Learning Models</li>
+                <li>✦ Responsive UI/UX Design</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Profile (Contact) Page -->
+    <section id="profile" class="container">
+        <div class="card">
+            <h2>Profile & Contact</h2>
+            <p><strong>Phone:</strong> +91 6301379531</p>
+            <p><strong>Email:</strong> msameer6964@gmail.com</p>
+            <p><strong>Education:</strong> B.Tech in AI & ML (Year 3)</p>
+            <p><strong>College:</strong> Sri Vasavi Institute of Engineering and Technology</p>
+            <div style="margin-top: 20px;">
+                <a href="mailto: msameer6964@gmail.com" class="btn">Hire Me</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
